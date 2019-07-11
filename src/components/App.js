@@ -2,7 +2,6 @@ import React, { Component } from "react";
 import axios from "axios";
 import "./App.css";
 import Post from "./Post/Post";
-
 import Header from "./Header/Header";
 import Compose from "./Compose/Compose";
 
@@ -48,7 +47,7 @@ class App extends Component {
 
     return (
       <div className="App__parent">
-        <Header />
+        <Header posts={posts} />
 
         <section className="App__content">
           <Compose createPostFn={this.createPost}/>
